@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Bob    
 
   def chat(input)
@@ -12,6 +13,23 @@ class Bob
    # else puts 
   end
 
+=======
+class Bob
+  def chat(input)
+    puts response_for(input)
+  end
+
+  def response_for(input)
+    if shouting?(input)
+      'Woah, chill out!'
+    elsif question?(input)
+      'Sure.'
+    elsif statement?(input)
+      'Whatever.'
+    else
+      'Fine, be that way.'
+    end
+>>>>>>> 7f90f1f2156bc6c56cb22ffba06880fe796a28ed
   end
 
   def statement?(input)
@@ -23,14 +41,26 @@ class Bob
   end
 
   def shouting?(input)
+<<<<<<< HEAD
     when input == input.upcase
   end
 end
 
 puts "I am Bob.  What the hell do you want?"
+=======
+    !input.empty? && input == input.upcase
+  end
+end
+
+puts "Hey bro, wassup?"
+>>>>>>> 7f90f1f2156bc6c56cb22ffba06880fe796a28ed
 bob = Bob.new
 while true
   input = gets.chomp.strip
   bob.chat(input)
+<<<<<<< HEAD
 end
 
+=======
+end
+>>>>>>> 7f90f1f2156bc6c56cb22ffba06880fe796a28ed

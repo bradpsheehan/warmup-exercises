@@ -8,22 +8,18 @@ class SayTest < MiniTest::Unit::TestCase
   end
 
   def test_100
-    skip
     assert_equal '100', Say.new(100).in_english
   end
 
   def test_1_thousand
-    skip
     assert_equal '1 thousand', Say.new(1000).in_english
   end
 
   def test_1_thousand_234
-    skip
     assert_equal '1 thousand 234', Say.new(1234).in_english
   end
 
   def test_1_million
-    skip
     assert_equal '1 million', Say.new(10**6).in_english
   end
 

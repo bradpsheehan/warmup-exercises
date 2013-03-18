@@ -8,22 +8,18 @@ class WordProblemTest < MiniTest::Unit::TestCase
   end
 
   def test_add_2
-    skip
     assert_equal 3, WordProblem.new('What is 1 plus 2?').answer
   end
 
   def test_add_more_digits
-    skip
     assert_equal 45801, WordProblem.new('What is 123 plus 45678?').answer
   end
 
   def test_add_negative_numbers
-    skip
     assert_equal -11, WordProblem.new('What is -1 plus -10?').answer
   end
 
   def test_subtract
-    skip
     assert_equal 16, WordProblem.new('What is 4 minus -12?').answer
   end
 

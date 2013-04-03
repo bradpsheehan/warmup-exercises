@@ -22,18 +22,21 @@ class SchoolTest < MiniTest::Unit::TestCase
   end
 
   def test_add_more_students_in_same_class
+    skip
     school.add("James", 2)
     school.add("Blair", 2)
     assert_equal({2 => ["James", "Blair"]}, school.db)
   end
 
   def test_add_students_to_different_grades
+    skip
     school.add("Chelsea", 3)
     school.add("Paul", 7)
     assert_equal({3 => ["Chelsea"], 7 => ["Paul"]}, school.db)
   end
 
   def test_get_students_in_a_grade
+    skip
     school.add("Franklin", 5)
     school.add("Bradley", 5)
     school.add("Jeff", 1)
@@ -41,6 +44,7 @@ class SchoolTest < MiniTest::Unit::TestCase
   end
 
   def test_sort_school
+    skip
     school.add("Jennifer", 4)
     school.add("Kareem", 6)
     school.add("Christopher", 4)

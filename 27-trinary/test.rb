@@ -8,17 +8,14 @@ class TrinaryTest < MiniTest::Unit::TestCase
   end
 
   def test_trinary_2_is_decimal_2
-    skip
     assert_equal 2, Trinary.new("2").to_decimal
   end
 
   def test_trinary_10_is_decimal_3
-    skip
     assert_equal 3, Trinary.new("10").to_decimal
   end
 
   def test_trinary_11_is_decimal_4
-    skip
     assert_equal 4, Trinary.new("11").to_decimal
   end
 

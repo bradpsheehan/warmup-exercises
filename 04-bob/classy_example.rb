@@ -52,6 +52,7 @@ puts "I am Bob.  What the hell do you want?"
   end
 end
 
+<<<<<<< HEAD
 puts "Hey bro, wassup?"
 >>>>>>> 7f90f1f2156bc6c56cb22ffba06880fe796a28ed
 bob = Bob.new
@@ -64,3 +65,14 @@ end
 =======
 end
 >>>>>>> 7f90f1f2156bc6c56cb22ffba06880fe796a28ed
+=======
+if ENV["RUBY_ENV"] == "test"
+else
+  puts "Hey bro, wassup?"
+  bob = Bob.new
+  while true
+    input = gets.chomp.strip
+    bob.chat(input)
+  end
+end
+>>>>>>> 7b1a477b73097ebf9b95bce021b78fbdaf5daf35

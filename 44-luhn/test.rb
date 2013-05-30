@@ -10,19 +10,16 @@ class LuhnTest < MiniTest::Unit::TestCase
   end
 
   def test_check_digit_again
-    skip
     luhn = Luhn.new(91370)
     assert_equal 0, luhn.check_digit
   end
 
   def test_addends
-    skip
     luhn = Luhn.new(12121)
     assert_equal [1, 4, 1, 4, 1], luhn.addends
   end
 
   def test_too_large_addend
-    skip
     luhn = Luhn.new(8631)
     assert_equal [7, 6, 6, 1], luhn.addends
   end

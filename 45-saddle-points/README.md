@@ -10,6 +10,17 @@ in its row, and less than or equal to any in its column.
 1 | 5  3  2     <--- saddle point at (1,0)
 2 | 6  6  7
 
+1 0 0
+1 0 0
+0 0 1
+
+0 0 0
+1 1 1
+0 0 0
+
+0 0 0
+1 0 0
+0 0 0
 
 ```ruby
 matrix = Matrix.new("9 8 7\n5 3 2\n6 6 7")
